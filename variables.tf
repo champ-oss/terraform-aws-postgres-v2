@@ -64,7 +64,7 @@ variable "enabled" {
 variable "engine_version" {
   description = "Aurora PostgreSQL version. Only applies at create time: AWS applies minor version upgrades in the maintenance window, so this is in ignore_changes and the live cluster drifts ahead of it. The major version also derives the parameter group family"
   type        = string
-  default     = "18.4.1"
+  default     = "16.11"
 }
 
 variable "kms_key_id" {
